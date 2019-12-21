@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta http-equiv="content-type"	content="application/xhtml+xml; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Project 1 - Registration  Page</title>
+
+        <!-- <link href="static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/> -->
+    </head>
+    <body>
+        <div>
+            <form id="RegeisterationForm" action="" method="post" autocomplete="off">
+                <h1>Registration  Form</h1>
+                <div>
+                    <div>
+                        <input tabindex="1" id="firstname" name="firstname" type="text" class="" placeholder="نام" maxlength="50" />
+                    </div>
+                    <div>
+                        <input tabindex="2" id="lastname" name="lastname" type="text" class=""  placeholder="نام خانوادگی" maxlength="50" />
+                    </div>
+                </div>
+                <div>
+                    <input tabindex="3" id="username" name="username" type="text" class=""  placeholder="نام کاربری" maxlength="50" />
+                </div>
+                <div>
+                    <input tabindex="4" id="password" name="password" type="password" class=""  placeholder="رمز عبور" maxlength="50" />
+                </div>
+                <div>
+                    <input tabindex="5" id="passwordRetype" name="passwordRetype" type="password" class=""  placeholder="تکرار رمز عبور" maxlength="50" />
+                </div>
+                <div>
+                    <div>
+                        <input tabindex="6" id="day" name="day" type="text" class=""  placeholder="روز" />
+                    </div>
+                    <div>
+                        <input tabindex="7" id="month" name="month" type="text" class=""  placeholder="ماه" />
+                    </div>
+                    <div>
+                        <input tabindex="8" id="year" name="year" type="text" class=""  placeholder="سال" />
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input tabindex="9" id="gender" name="gender" type="text" class=""  placeholder="جنسیت" />
+                    </div>
+                    <div>
+                        <input tabindex="10" id="phone" name="phone" type="text" class=""  placeholder="شماره همراه" />
+                    </div>
+                </div>
+
+                <div>
+                    <input class="btn btn-default submit" type="submit" value="Login" />
+                </div>
+                
+                <p class="" id="error"></p>
+            </form>
+        </div>
+
+
+        
+        <!-- libraries scripts -->
+        <script src="https://unpkg.com/popper.js@1"></script>
+        <script src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script>
+        <!-- end libraries scripts -->
+
+        <!-- libraries stylesheets -->
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
+        <!-- end libraries stylesheets -->
+        
+        <!-- custom scrips -->
+        <script type="text/javascript" src="javascript.js"></script>
+        <!-- end custom scrips -->
+
+        <!-- custom stylesheets -->
+        <!-- end custom stylesheets -->
+    </body>
+</html>
