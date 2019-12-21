@@ -35,7 +35,20 @@
                         <input tabindex="6" id="day" name="day" type="text" class=""  placeholder="روز" />
                     </div>
                     <div>
-                        <input tabindex="7" id="month" name="month" type="text" class=""  placeholder="ماه" />
+                        <select tabindex="7" class="js-example-basic-single" name="state">
+                            <option value="Fa">فروردین</option>
+                            <option value="Or">اردیبهشت</option>
+                            <option value="Kh">خرداد</option>
+                            <option value="Ti">تیر</option>
+                            <option value="Mo">مرداد</option>
+                            <option value="Sh">شهریور</option>
+                            <option value="Me">مهر</option>
+                            <option value="Ab">آبان</option>
+                            <option value="Az">آذر</option>
+                            <option value="De">دی</option>
+                            <option value="Ba">بهمن</option>
+                            <option value="Es">اسفند</option>
+                          </select>
                     </div>
                     <div>
                         <input tabindex="8" id="year" name="year" type="text" class=""  placeholder="سال" />
@@ -63,14 +76,19 @@
         <!-- libraries scripts -->
         <script src="https://unpkg.com/popper.js@1"></script>
         <script src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <!-- end libraries scripts -->
 
         <!-- libraries stylesheets -->
         <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/flat/blue.css" rel="stylesheet">
         <!-- end libraries stylesheets -->
         
         <!-- custom scrips -->
-        <script type="text/javascript" src="javascript.js"></script>
+        <script type="text/javascript" src="tippy_custom.js"></script>
         <!-- end custom scrips -->
 
         <!-- custom stylesheets -->
