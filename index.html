@@ -7,88 +7,103 @@
 
         <title>Project 1 - Registration  Page</title>
 
+        <!-- libraries stylesheets -->
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/all.css" integrity="sha256-KS/KA6l6/TgimcBRobFX07zO4LAjYASrXfF79TFBk1Q=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css" integrity="sha256-+1Yu+5ObnnRUhRwyuxT1eNj5iVx/zBNS75tYlzc1z7U=" crossorigin="anonymous" />
+        <!-- end libraries stylesheets -->
+
         <!-- <link href="static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/> -->
     </head>
     <body>
         <div>
-            <form id="RegeisterationForm" action="" method="post" autocomplete="off">
-                <h1>Registration  Form</h1>
-                <div>
-                    <div>
-                        <input tabindex="1" id="firstname" name="firstname" type="text" class="" placeholder="نام" maxlength="50" />
-                    </div>
-                    <div>
-                        <input tabindex="2" id="lastname" name="lastname" type="text" class=""  placeholder="نام خانوادگی" maxlength="50" />
-                    </div>
-                </div>
-                <div>
-                    <input tabindex="3" id="username" name="username" type="text" class=""  placeholder="نام کاربری" maxlength="50" />
-                </div>
-                <div>
-                    <input tabindex="4" id="password" name="password" type="password" class=""  placeholder="رمز عبور" maxlength="50" />
-                </div>
-                <div>
-                    <input tabindex="5" id="passwordRetype" name="passwordRetype" type="password" class=""  placeholder="تکرار رمز عبور" maxlength="50" />
-                </div>
-                <div>
-                    <div>
-                        <input tabindex="6" id="day" name="day" type="text" class=""  placeholder="روز" />
-                    </div>
-                    <div>
-                        <select tabindex="7" class="js-example-basic-single" name="state">
-                            <option value="Fa">فروردین</option>
-                            <option value="Or">اردیبهشت</option>
-                            <option value="Kh">خرداد</option>
-                            <option value="Ti">تیر</option>
-                            <option value="Mo">مرداد</option>
-                            <option value="Sh">شهریور</option>
-                            <option value="Me">مهر</option>
-                            <option value="Ab">آبان</option>
-                            <option value="Az">آذر</option>
-                            <option value="De">دی</option>
-                            <option value="Ba">بهمن</option>
-                            <option value="Es">اسفند</option>
-                          </select>
-                    </div>
-                    <div>
-                        <input tabindex="8" id="year" name="year" type="text" class=""  placeholder="سال" />
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <input tabindex="9" id="gender" name="gender" type="text" class=""  placeholder="جنسیت" />
-                    </div>
-                    <div>
-                        <input tabindex="10" id="phone" name="phone" type="text" class=""  placeholder="شماره همراه" />
-                    </div>
-                </div>
+            <div class="clock"></div>
 
-                <div>
-                    <input class="btn btn-default submit" type="submit" value="Login" />
-                </div>
-                
-                <p class="" id="error"></p>
-            </form>
+            <div>
+                <form id="RegeisterationForm" action="" method="post" autocomplete="off">
+                    <h1>Registration  Form</h1>
+                    <div>
+                        <div>
+                            <input tabindex="1" id="firstname" name="firstname" type="text" class="" placeholder="نام" maxlength="50" />
+                        </div>
+                        <div>
+                            <input tabindex="2" id="lastname" name="lastname" type="text" class=""  placeholder="نام خانوادگی" maxlength="50" />
+                        </div>
+                    </div>
+                    <div>
+                        <input tabindex="3" id="username" name="username" type="text" class=""  placeholder="نام کاربری" maxlength="50" />
+                    </div>
+                    <div>
+                        <input tabindex="4" id="password" name="password" type="password" class=""  placeholder="رمز عبور" maxlength="50" />
+                    </div>
+                    <div>
+                        <input tabindex="5" id="passwordRetype" name="passwordRetype" type="password" class=""  placeholder="تکرار رمز عبور" maxlength="50" />
+                    </div>
+                    <div>
+                        <div>
+                            <input tabindex="6" id="day" name="day" type="text" class=""  placeholder="روز" />
+                        </div>
+                        <div>
+                            <select tabindex="7" class="js-example-basic-single" name="state">
+                                <option value="Fa">فروردین</option>
+                                <option value="Or">اردیبهشت</option>
+                                <option value="Kh">خرداد</option>
+                                <option value="Ti">تیر</option>
+                                <option value="Mo">مرداد</option>
+                                <option value="Sh">شهریور</option>
+                                <option value="Me">مهر</option>
+                                <option value="Ab">آبان</option>
+                                <option value="Az">آذر</option>
+                                <option value="De">دی</option>
+                                <option value="Ba">بهمن</option>
+                                <option value="Es">اسفند</option>
+                                </select>
+                        </div>
+                        <div>
+                            <input tabindex="8" id="year" name="year" type="text" class=""  placeholder="سال" />
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input tabindex="9" id="gender" name="gender" type="text" class=""  placeholder="جنسیت" />
+                        </div>
+                        <div>
+                            <input tabindex="10" id="phone" name="phone" type="text" class=""  placeholder="شماره همراه" />
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label>
+                            <input tabindex="11" id="checkbox" type="checkbox" name="checkbox" >
+                            شرایط توافق نامه را میپذیرم!
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <input id="submit" class="btn btn-default submit" type="submit" value="Login" />
+                    </div>
+                    
+                    <p class="" id="error"></p>
+                </form>
+            </div>
         </div>
 
 
         
         <!-- libraries scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/popper.js@1"></script>
         <script src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.js" integrity="sha256-LnexpAH6Dc12CjL5nVvF6kwco3N4Cs+Ahtm0fmnyGhg=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js" integrity="sha256-acPJCWQhgmeUTM0IJ84lOWiwGNtUhcjJOlOjYH00480=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <!-- end libraries scripts -->
 
-        <!-- libraries stylesheets -->
-        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
-        <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/flat/blue.css" rel="stylesheet">
-        <!-- end libraries stylesheets -->
-        
         <!-- custom scrips -->
         <script type="text/javascript" src="tippy_custom.js"></script>
+        <script type="text/javascript" src="flip_clock.js"></script>
         <!-- end custom scrips -->
 
         <!-- custom stylesheets -->
