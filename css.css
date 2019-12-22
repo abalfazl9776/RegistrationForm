@@ -22,7 +22,9 @@
     grid-gap: 10px;
     grid-template-columns: auto auto auto;
 }
-
+.grid-item-five>div:nth-child(even){
+    font-size: xx-large;
+}
 .item-1{
     grid-column: 1;
 }
@@ -50,6 +52,7 @@ input{
 
 select{
     height: 36px;
+    width: 100%;
 }
 
 .submit{
@@ -58,4 +61,8 @@ select{
 
 #RegeisterationForm>div{
     margin-top: 4px;
+}
+
+#RegeisterationForm{
+    direction: rtl;
 }
