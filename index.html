@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Project 1 - Registration  Page</title>
-        <link href="css.css" rel="stylesheet"/>
 
         <!-- libraries stylesheets -->
         <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
@@ -15,7 +14,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css" integrity="sha256-+1Yu+5ObnnRUhRwyuxT1eNj5iVx/zBNS75tYlzc1z7U=" crossorigin="anonymous" />
         <!-- end libraries stylesheets -->
 
-        <!-- <link href="static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/> -->
+        <!-- custom stylesheets -->
+        <link href="css.css" rel="stylesheet"/>
+        <!-- end custom stylesheets -->
+
     </head>
     <body>
         <div>
@@ -30,13 +32,13 @@
                             <input tabindex="2" id="lastname" name="lastname" type="text" class=""  placeholder="نام خانوادگی" maxlength="50" />
                         </div>
                     </div>
-                    <div class="">
+                    <div class="username-container">
                         <input tabindex="3" id="username" name="username" type="text" class=""  placeholder="نام کاربری" maxlength="50" />
                     </div>
-                    <div class="">
+                    <div class="password-container">
                         <input tabindex="4" id="password" name="password" type="password" class=""  placeholder="رمز عبور" maxlength="50" />
                     </div>
-                    <div class="">
+                    <div class="passwordRetype-container">
                         <input tabindex="5" id="passwordRetype" name="passwordRetype" type="password" class=""  placeholder="تکرار رمز عبور" maxlength="50" />
                     </div>
                     <div class="grid-item-five date">
@@ -74,8 +76,13 @@
                         </div>
                     </div>
 
+                    <div>
+                        <input tabindex="11" id="checkbox" type="checkbox" name="checkbox" />
+                        <lable for="checkbox">شرایط توافق نامه را میپذیرم</lable>
+                    </div>
+
                     <div class="">
-                        <input class="btn btn-default submit" type="submit" value="Login" />
+                        <input id="submit" class="btn btn-default submit" type="submit" value="Login" disabled="true"/>
                     </div>
                     
                     <p class="" id="error"></p>
@@ -83,8 +90,6 @@
             </div>
             <div class="clock"></div>
         </div>
-
-
         
         <!-- libraries scripts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -99,9 +104,7 @@
         <!-- custom scrips -->
         <script type="text/javascript" src="tippy_custom.js"></script>
         <script type="text/javascript" src="flip_clock.js"></script>
+        <script type="text/javascript" src="custom.js"></script>
         <!-- end custom scrips -->
-
-        <!-- custom stylesheets -->
-        <!-- end custom stylesheets -->
     </body>
 </html>
