@@ -32,7 +32,7 @@ var clock = new FlipClock($('.clock'), 120, {
     autoStart: true,
     callbacks: {
         stop: function() {
-            $('#submit').attr("disabled" , true);
+            $('.submit').attr("disabled" , true);
         }
     }
 });
@@ -44,12 +44,12 @@ $('#checkbox').iCheck({
 
 $('#checkbox').on('ifChecked', function(){
     if(clock.getTime().time > 0) {
-        $('#submit').attr( "disabled", false );
+        $('.submit').attr( "disabled", false );
     }
 });
 
 $('#checkbox').on('ifUnchecked', function(){
-    $('#submit').attr( "disabled", true );
+    $('.submit').attr( "disabled", true );
 });
 
 $("#username").on("focusout" , function(){
