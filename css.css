@@ -1,38 +1,29 @@
 .grid-container {
     display: grid;
     grid-gap: 10px;
-    padding: 10px;
-    max-width: 900px;
-    max-height: 900px;
     margin: 6vh 25vw 0vh 25vw;
 }
 .grid-container *{
     width: 100%;
-    height: 30px;
+   
 }
-.grid-container>div {
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
+.grid-container>div,
+.grid-container>div>div{
+    height: 100vh;
 }
-
+.clock{
+    margin-top: 75px!important;
+}
 .grid-item-two{
     display: grid;
     grid-gap: 10px;
-    padding: 10px;
     grid-template-columns: auto auto;
 }
 
 .grid-item-five{
     display: grid;
     grid-gap: 10px;
-    padding: 10px;
     grid-template-columns: auto auto auto;
-}
-
-.grid-item-two>div , 
-.grid-item-three>div{
-    
 }
 
 .item-1{
@@ -53,4 +44,20 @@
 
 .item-5{
     grid-column: 5;
+}
+
+input{
+    height: 30px;
+}
+
+select{
+    height: 36px;
+}
+
+.submit{
+    width: 50%;
+}
+
+#RegeisterationForm>div{
+    margin-top: 4px;
 }
