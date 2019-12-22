@@ -110,23 +110,27 @@ $("#phone").on("focusout" , function(){
     }
 });
 
-$('#submit').click(function(){
+$('.submit').click(function(){
+    var formIsValid = true;
     $('input').each(function() {
         if(!$(this).val()){
-            swal({
-                title: "خطا",
-                text: "لطفا همه فیلد ها را پر کنید",
-                icon: "warning",
-                button: "Aww yiss!",
-            });
-        }
-        else {
-            swal({
-                title: "Good job!",
-                text: "You clicked the button!",
-                icon: "success",
-                button: "Aww yiss!",
-            });
+            formIsValid = false;
         }
     });
+
+    if(formIsValid){
+        swal({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success",
+            button: "ok!",
+        });
+    }else{
+        swal({
+            title: "خطا",
+            text: "لطفا همه فیلد ها را پر کنید",
+            icon: "warning",
+            button: "ok!",
+        });
+    }
 });
