@@ -3,10 +3,7 @@
     grid-gap: 10px;
     margin: 6vh 25vw 0vh 25vw;
 }
-.grid-container *{
-    width: 100%;
-   
-}
+
 .grid-container>div,
 .grid-container>div>div{
     height: 100vh;
@@ -48,6 +45,7 @@
 
 input{
     height: 30px;
+    width: 100%;
 }
 
 select{
