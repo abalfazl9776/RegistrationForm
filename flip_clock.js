@@ -25,3 +25,16 @@ var clock = new FlipClock($('.clock'), 600, {
 clock.start(function() {
     // Optional callback will fire when the clock starts
 });
+
+$(document).ready(function(){
+	$('.checkbox').iCheck({
+	  checkboxClass: 'icheckbox_flat',
+	  radioClass: 'iradio_flat'
+	});
+	$('.checkbox').on('ifChecked', function(event){
+		$('.submit').removeAttr('disabled');
+	});
+	$('.checkbox').on('ifUnchecked', function(event){
+		$('.submit').attr('disabled','true');
+	});
+});
